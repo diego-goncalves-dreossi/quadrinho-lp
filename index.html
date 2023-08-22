@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+   
+  </head>
+  <body class="container text-center">
+
+    <article class="d-flex flex-column align-items-center gap-3 esp">
+        <h1>Nome do quadrinho</h1>
+        <img src="assets/imgs/capa.png" alt="Capa do livro/revista" class="tam_capa" data-bs-toggle="modal" data-bs-target="#modalCapa">
+        <span class="badge rounded-pill text-bg-warning">01/23</span>
+        <p class="col-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, laborum iste placeat sunt id assumenda perferendis corrupti totam magnam, expedita dolore labore in. Provident consequuntur aut dolore non unde iure.</p>
+    </article>
+
+
+   
+    <div class="d-flex flex-column align-items-center esp ">
+        <h2>Preview</h2>
+        <div id="carouselExample" class="carousel slide tam_preview ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="assets/imgs/foto1.jpg" class="d-block w-100 fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/imgs/foto2.jpg" class="d-block w-100 fluid " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/imgs/foto3.jpg" class="d-block w-100 fluid" alt="...">
+                </div>
+        
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon c" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden c">Next</span>
+            </button>
+        </div>
+    </div>
+   
+
+    <section class="row d-flex flex-row esp ">
+        <div class="col-md-6 ">
+            <div class="card sombra text-bg-success mb-3 mx-auto my-auto" style="max-width: 18rem;">
+                <div class="card-header">Autores</div>
+                <div class="card-body">
+                    <h5 class="card-title">Roteiro</h5>
+                    <p class="card-text">João da Silva</p>
+                    <h5>Desenhos</h5>
+                    <p class="card-text">Zé da Costa</p>
+                </div>
+            </div>
+           
+        </div>
+        <div class="col-md-6 p-2">
+            <table class="table table-info table-striped table-bordered border-primary sombra">
+                <thead>
+                <tr>
+                    <th colspan ="2">Detalhes do produto</th>
+            
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Tipo de publicação</td>
+                    <td>Encadernado</td>
+            
+                </tr>
+                <tr>
+                    <td>Frequência</td>
+                    <td>Regular</td>
+            
+                </tr>
+                <tr>
+                    <td>Páginas</td>
+                    <td>144</td>
+                </tr>
+                <tr>
+                    <td>Categoria</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Coleção</td>
+                    <td>Especial</td>
+                </tr>
+                <tr>
+                    <td>Classificação etária</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Conteúdo original</td>
+                    <td>---</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCapa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+          
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/imgs/capa.png" alt="Capa do livro/revista" class="img-fluid">
+            </div>
+         
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPreview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+          
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+         
+        </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-danger br esp sombra-btn"><strong>Compre aqui!</strong></a>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
+

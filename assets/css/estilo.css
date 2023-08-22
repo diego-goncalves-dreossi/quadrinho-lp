@@ -1,0 +1,66 @@
+.fluid{
+    object-fit: contain;
+    aspect-ratio: 16/9;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+body{
+    background-image: url('../imgs/fundo.png');
+}
+
+.br{
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.esp{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sombra-btn{
+    box-shadow: 10px 10px 10px black;
+}
+
+.sombra{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.597);
+
+}
+
+.tam_capa{
+    width: 100% !important;
+}
+
+.tam_preview{
+    width: 100% !important;
+
+}
+
+@media screen  and (min-width:481px) {
+    .tam_capa{
+        width: 50% !important;
+    }
+
+    .tam_preview{
+        width: 75% !important;
+
+    }
+
+}
+
+@media screen and (min-width:769px){
+    .tam_capa{
+        width: 25% !important;
+    }
+
+    .tam_preview{
+        width: 50% !important;
+
+    }
+
+}
